@@ -13,6 +13,11 @@ Build and run the client with the necessary parameters.
 py server.py <port>
 ```
 
+### Example:
+```
+py server.py 12345
+```
+
 ## Running the client
 Build and run the client with the necessary parameters.
 
@@ -25,13 +30,13 @@ Build and run the client with the necessary parameters.
 py client.py <address> <port> <interaction> <plate> <point>
 ```
 
-### Examples:
-```
-py server.py 8224
-```
+### Example:
 ```
 py client.py 127.0.0.1 12345 ENTRY ABC123 9
 ```
 
 ## User prompts
 If no command-line arguments are provided, the script will prompt the user for each input.
+
+## Server logging
+Aside from displaying its logs to the console, the server generates a log file named `server.log`, which is modified and saved in real-time. The log file is not cleared between each session of the server application; it will only append new log entries.
